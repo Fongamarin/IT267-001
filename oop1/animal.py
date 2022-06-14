@@ -35,3 +35,9 @@ if __name__ == "__main__":
         #เรียกดูข้อมูลของ opject ผ่านทางชื่อclass
         Animal.print_detail(ula) #ula.print_detail()
         Animal.print_detail(drac) #drac.print_detail()
+
+        #เรียกดู class variableทั้งหมด
+        print(f'{Animal.__dict__}')
+        
+        #เรียกดู instand variable
+        print(f'{ula.__dict__}')
