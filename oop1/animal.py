@@ -41,3 +41,9 @@ if __name__ == "__main__":
         
         #เรียกดู instand variable
         print(f'{ula.__dict__}')
+
+        peter = Animal()
+        peter.new_animal("peter","Parrot","green yellow red",2)
+        # add new attribute to petor
+        peter.legs = 2
+        print(f'{peter.__dict__}')
