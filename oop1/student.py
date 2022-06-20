@@ -1,5 +1,8 @@
 class Student:
-    def __init__(self,id:str,name:str,major:str):
+    #major:str + "it"
+    #major = "it"
+    #major:"It" error
+    def __init__(self,id:str,name:str,major:str = "IT"):
         self.id = id
         self.name = name
         self.major = major
@@ -12,8 +15,11 @@ class Student:
     def __del__(self):
         print("Object Destroyed")
 
-if __name__ == "__main__":
+if __name__ == "_main_":
     jes = Student("111","Jesica","IT")
     john = Student("112","John","MKT")
+    amy = Student("113","Amy")
+
     jes.display_detail()
-    john.display_detail()
+    john.display_detail() 
+    amy.display_detail()
